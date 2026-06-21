@@ -1,12 +1,7 @@
-﻿// _c_cpp_langwork_.cpp : Defines the entry point for the application.
-//
+﻿#include "_c_cpp_langwork_.h"
+#include "source/general_problems__.cpp"
 
-#include "_c_cpp_langwork_.h"
-
-using namespace std;
-
-int main()
-{
-	cout << "Hello CMake." << endl;
-	return 0;
+int main(int argc, const char *argv[]) {
+	__main__general_problems__(argc, argv);
+	return argc;
 }
