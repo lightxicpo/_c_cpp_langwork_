@@ -10,9 +10,12 @@ private:
 		int num_2 = right_values - _mid_values;
 		std::vector<int> left_vector(num_1), right_vector(num_2);
 		for (unsigned int i = 0; i < num_1; i++) {
-			left_vector[i] = target_array_[_left_values + 1];
+			left_vector[i] = target_array_[static_cast<std::vector<int,
+				std::allocator<int>>::size_type>(_left_values) + 1];
 		} for (unsigned int i = 0; i < num_2; i++) {
-			right_vector[i] = target_array_[_mid_values + 1 + i];
+			right_vector[i] = target_array_[static_cast<unsigned long long>(_mid_values) + 1 
+				+ static_cast<std::vector<int,
+				std::allocator<int>>::size_type>(i)];
 		} int i = 0, j = 0, k = _left_values;
 		while (i < num_1 && j < num_2) {
 			if (left_vector[i] == right_vector[j]) {

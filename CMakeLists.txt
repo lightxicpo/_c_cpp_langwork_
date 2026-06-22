@@ -12,7 +12,7 @@ endif()
 project ("_c_cpp_langwork_")
 
 # Add source to this project's executable.
-add_executable (_c_cpp_langwork_ "_c_cpp_langwork_.cpp" "_c_cpp_langwork_.h" "source/general_problems__.cpp")
+add_executable (_c_cpp_langwork_ "_c_cpp_langwork_.cpp" "_c_cpp_langwork_.h" "source/general_problems__.cpp" "_intermed_probes__.cpp")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET _c_cpp_langwork_ PROPERTY CXX_STANDARD 20)
