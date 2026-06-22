@@ -3,6 +3,26 @@
 
 class problems_prof_sec__ {
 private: 
+	static inline int _linear_array_search_(std::vector<int> target_array__, int finding_value__) {
+		for (unsigned int i = 0; i < target_array__.size(); i++) {
+			if (finding_value__ == target_array__[i]) {
+				return i;
+			}
+		} return -1;
+	}
+	static inline int equilibrium_point__(const std::vector<int> &array_target__) {
+		int _sum_value__ = 0, index_value = array_target__[0];
+		int left_sum__ = 0, _right_sum_ = 0;
+		for (unsigned int i = 0; i < array_target__.size(); i++) {
+			_sum_value__ += array_target__[i];
+		}  for (unsigned int i = 0; i < array_target__.size(); i++) {
+			_right_sum_ = _sum_value__ - left_sum__ - array_target__[i];
+			if (left_sum__ == _right_sum_) {
+				return i; 
+			} left_sum__ += array_target__[i];
+		}
+		return _sum_value__;
+	}
 	static void sort_bubble_(std::vector<int> &array_target_space) {
 		int temp_value__ = 0; 
 		for (unsigned int i = 0; i < array_target_space.size() - 1; i++) {
@@ -20,6 +40,10 @@ private:
 		}
 	}
 public: 
+	static inline void __implement_equilibrium_point__() {
+		std::vector<int> target_array = { 1, 2, 0, 3 };
+		std::cout << equilibrium_point__(target_array);
+	}
 	static inline void implement_bubble_sort__() {
 		std::vector<int> sort_array__ = { 2, 5, 6, 2, 4,2, 1 };
 		sort_bubble_(sort_array__);
@@ -32,6 +56,6 @@ public:
 };
 
 static inline int __main__general_problems__(int argc, const char *argv[]) {
-	problems_prof_sec__::implement_bubble_sort__();
+	problems_prof_sec__::__implement_equilibrium_point__(); 
 	return argc; 
 }
