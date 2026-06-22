@@ -1,19 +1,4 @@
 # ninja log v7
-33	4221	8038284420306903	CMakeFiles/_c_cpp_langwork_.dir/source/general_problems__.cpp.obj	6839214683feb3f8
-16	4284	8038284420103761	CMakeFiles/_c_cpp_langwork_.dir/_c_cpp_langwork_.cpp.obj	a0af03dcc788510e
-4285	10195	8038284462799532	_c_cpp_langwork_.exe	9670d783b1fadf51
-71	3318	8038284992064256	CMakeFiles/_c_cpp_langwork_.dir/_c_cpp_langwork_.cpp.obj	a0af03dcc788510e
-81	3364	8038284992164388	CMakeFiles/_c_cpp_langwork_.dir/source/general_problems__.cpp.obj	6839214683feb3f8
-3365	6012	8038285024999489	_c_cpp_langwork_.exe	9670d783b1fadf51
-47	3141	8038285153233858	CMakeFiles/_c_cpp_langwork_.dir/source/general_problems__.cpp.obj	6839214683feb3f8
-38	3363	8038285153142589	CMakeFiles/_c_cpp_langwork_.dir/_c_cpp_langwork_.cpp.obj	a0af03dcc788510e
-3364	4913	8038285186398497	_c_cpp_langwork_.exe	9670d783b1fadf51
-63	2988	8038286801859518	CMakeFiles/_c_cpp_langwork_.dir/source/general_problems__.cpp.obj	6839214683feb3f8
-54	3091	8038286801769762	CMakeFiles/_c_cpp_langwork_.dir/_c_cpp_langwork_.cpp.obj	a0af03dcc788510e
-3092	6172	8038286832149433	_c_cpp_langwork_.exe	9670d783b1fadf51
-46	3034	8038286987159280	CMakeFiles/_c_cpp_langwork_.dir/source/general_problems__.cpp.obj	6839214683feb3f8
-37	3062	8038286987069509	CMakeFiles/_c_cpp_langwork_.dir/_c_cpp_langwork_.cpp.obj	a0af03dcc788510e
-3063	5413	8038287017329694	_c_cpp_langwork_.exe	9670d783b1fadf51
 55	4203	8038290332227761	CMakeFiles/_c_cpp_langwork_.dir/source/general_problems__.cpp.obj	6839214683feb3f8
 45	4217	8038290332120514	CMakeFiles/_c_cpp_langwork_.dir/_c_cpp_langwork_.cpp.obj	a0af03dcc788510e
 4218	6726	8038290373850860	_c_cpp_langwork_.exe	9670d783b1fadf51

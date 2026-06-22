@@ -3,6 +3,28 @@
 
 class problems_prof_sec__ {
 private: 
+	// required to analyse!!!!
+	static inline void merge_sort__array__(std::vector<int> target_array_,
+		int _left_values, int _mid_values, int right_values) {
+		int num_1 = _mid_values - _left_values + 1; 
+		int num_2 = right_values - _mid_values;
+		std::vector<int> left_vector(num_1), right_vector(num_2);
+		for (unsigned int i = 0; i < num_1; i++) {
+			left_vector[i] = target_array_[_left_values + 1];
+		} for (unsigned int i = 0; i < num_2; i++) {
+			right_vector[i] = target_array_[_mid_values + 1 + i];
+		} int i = 0, j = 0, k = _left_values;
+		while (i < num_1 && j < num_2) {
+			if (left_vector[i] == right_vector[j]) {
+				target_array_[k] = left_vector[i];
+				i++;
+			} else {
+				target_array_[k] = right_vector[j];
+				j++;
+			} 
+			k++;
+		}
+	}
 	static inline int _linear_array_search_(std::vector<int> target_array__, int finding_value__) {
 		for (unsigned int i = 0; i < target_array__.size(); i++) {
 			if (finding_value__ == target_array__[i]) {
