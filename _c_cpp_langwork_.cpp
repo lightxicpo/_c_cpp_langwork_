@@ -1,10 +1,25 @@
 ﻿#include "_c_cpp_langwork_.h"
 #include "source/general_problems__.cpp"
-
+#include <stdlib.h>
+#include <thread>
+#include <Windows.h>
+#include <chrono>
 
 static inline void _pointer__arithmetic__() {
-	std::vector<int> inter_work__ = { 1, 2, 3, 4 };
-	std::cout << "Chal ja kuttee!!"; 
+	int arr_phase[1000] = { 0 };
+	int iterator_random_integer_push = 0;
+	while (iterator_random_integer_push < 1000) {
+		int random_generator__ = rand();
+		arr_phase[iterator_random_integer_push] = random_generator__;
+		std::cout << "ending crash value: " << iterator_random_integer_push << std::endl;
+		iterator_random_integer_push++;
+	} 
+	std::this_thread::sleep_for(std::chrono::milliseconds(2000)); // sleep the thread
+	Beep(750, 323);
+	const int *first_element__ = arr_phase;
+	for (unsigned int i = 0; i < int(sizeof(arr_phase)/sizeof(arr_phase[0])); i++) {
+		std::cout << *(first_element__ + i) << std::endl; // pointer arithemetic
+	}
 }
 
 static inline void __pointer_points() {
