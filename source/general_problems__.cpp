@@ -3,7 +3,6 @@
 
 class problems_prof_sec__ {
 private: 
-	// required to analyse!!!!
 	static inline void merge_sort__array__(std::vector<int> target_array_,
 		int _left_values, int _mid_values, int right_values) {
 		int num_1 = _mid_values - _left_values + 1; 

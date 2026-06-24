@@ -18,6 +18,6 @@ if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET _c_cpp_langwork_ PROPERTY CXX_STANDARD 20)
 endif()
 
-# TODO: Add tests and install targets if needed.
+# TODO: Add tests and install targets if = behe.
 
 # bsdk 
